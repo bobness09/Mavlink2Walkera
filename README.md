@@ -23,8 +23,8 @@ Things needed:
 
 Connecting the 5 cables to the Arduino:
 --------------------------------------------------------------------
-*Pixhawk/Arducopter Telemetry Port: Connect 5V and GND to the Arduinos VCC/GND pins. The TX/RX of the telemetry to the RX/TX-Pins of the Arduino (be sure to cross them!) (the ones you flashed the Hex-File previously with the TTL-Adapter)
-*RX705: Connect the one white telemetry cable to Pin 5 of the Arduino. Solder this wire directly to the Arduino.
+* Pixhawk/Arducopter Telemetry Port: Connect 5V and GND to the Arduinos VCC/GND pins. The TX/RX of the telemetry to the RX/TX-Pins of the Arduino (be sure to cross them!) (the ones you flashed the Hex-File previously with the TTL-Adapter)
+* RX705: Connect the one white telemetry cable to Pin 5 of the Arduino. Solder this wire directly to the Arduino.
 
 Put the Arduino in clear heat shrink tube to avoid shortcuts.
 
