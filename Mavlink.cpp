@@ -155,14 +155,13 @@ const int Mavlink::getDate()
 }
 
 // We receive the GPS coordinates in ddd.dddd format
-// Walkera Telemetry wants the dd mm.ssss format so convert.
+// Walkera Telemetry wants the dd mm.mmm format so convert.
 float Mavlink::gpsDdToDmsFormat(float ddm)
 {
 	int deg = (int)ddm;
-	float min_dec = (ddm - deg) * 60.0f;
-	float sec = (min_dec - (int)min_dec);
+	float mm = (ddm - deg) * 60.0f;
 
-	return (float)deg * 100.0f + (int)min_dec + sec;
+	return (float)deg * 100.0f + mm;
 }
 
 void Mavlink::makeRateRequest()
